@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
+<title> HLICKER</title>
+<link rel = "icon" href = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQz9AwpJvWA_oqhjJcdRqzF5k9Y49XISTJqQ&usqp=CAU" 
+       type = "image/x-icon">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple|fire">
+
+
+<div class="topnav">
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple|fire">
+    <a href="Home.html">
+      <h1 class="neon">HLICKER <div class ="a"></div></h1>
+      <a  href="Home.html">Introduction</a>
+      <a  href="">Best photos</a>
+      <a  href="About us.html">Blog</a>
+      <a href="Contact us.html">Contact us</a>
+      <input type="text" placeholder="Search..">
+</div>
+</div>
+    </head>
+
+<body>
+
+<div class ="bg-img">
+    <div class="container">
+            <h2 class="text-center fw-bold mb-3">Contact us</h2>
+            <p>complete the form below and we'll contact you to discuss your need and how we can help.</p>
+          
+                <form action="mailto:deepak9063154@gmail.com" method="post"
+enctype="multipart/form-data"
+name="EmailForm">
+                <div id="form_alerts"></div>
+               <b><label>Name:</label></b> <input type= "text" placeholder="First Name" required=""></br>
+               <b><label>E-mail:</label></b> <input type ="email"  placeholder="Email Address " required=""></br>
+               <textarea name="problem" class="form-control" placeholder="What can we help?" rows="5" required=""></textarea>
+                <input type="checkbox" >check this box if the given information about you is correct. 
+                <p>By submitting this form you are consenting to our Privacy Policy and Terms & Conditions. 
+                we will contact you via email or phone.</p>
+</br>
+<div>
+   <button class="btn btn-primary me-2" type="submit">Send</button>
+   <button class="btn btn-danger" type="reset">Reset</button>
+</div>
+</form>
+</div>
+</div>
+
+
+ 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const scriptURL = ''
+    const form = document.forms['google-sheet']
+    
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => $("#form_alerts").html("<div class='alert alert-success'>Request has been sent </div>"))
+        .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>check the request</div>"))
+    })
+</script>
+<link rel="stylesheet" type="text/css" href="1.css">
+</body>
+
+</html>
