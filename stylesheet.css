@@ -117,7 +117,6 @@ h1 {
 }
 
 .bg-img {
-  /* The image used */
   background-image: url("https://www.alexandratourism.com/wp-content/uploads/2015/03/Green-Hills-landscape-mountains-1920x1080.jpg");
 
   min-height: 750px;
@@ -130,7 +129,6 @@ h1 {
 }
 
 .bg-img01 {
-  /* The image used */
   background-image: url("https://wallpaper.dog/large/5517231.jpg");
 
   min-height: 750px;
@@ -158,7 +156,7 @@ h1 {
   position: absolute;
   right: 0;
   margin: 50px;
-  max-width: 500px;
+  max-width: 430px;
   text-align: center;
   padding: 10px;
   background: linear-gradient(rgba(161, 240, 236, 0.568),rgb(129, 228, 129));
@@ -167,7 +165,7 @@ h1 {
 .container01 {
   position: absolute;
   right: 0;
-  margin: 50px;
+  margin: 30px;
   max-width: 500px;
   text-align: left;
   padding: 10px;
@@ -178,7 +176,7 @@ h1 {
   right: 0;
   margin: 50px;
   max-width: 500px;
-  text-align: left;
+  text-align: right;
   padding: 10px;
   background: linear-gradient(rgba(161, 240, 236, 0.568),rgb(228, 248, 228));
 }
